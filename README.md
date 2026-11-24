@@ -24,13 +24,15 @@ Each workflow keeps a journal beside the session's transcript (`<session>/subage
 At the prompt of a terminal session:
 
 ```
-/plugin install loop-agents --marketplace dinglestein/loop-agents
+/plugin marketplace add dinglestein/loop-agents
+/plugin install loop-agents@loop-agents
 ```
 
 From a shell:
 
 ```
-claude plugin install loop-agents --marketplace dinglestein/loop-agents
+claude plugin marketplace add dinglestein/loop-agents
+claude plugin install loop-agents@loop-agents
 ```
 
 In the desktop app, where `/plugin` does not run: click + next to the prompt box, then Plugins, Add marketplace with `dinglestein/loop-agents`, then Add plugin.
