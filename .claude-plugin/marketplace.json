@@ -1,6 +1,6 @@
 {
   "name": "loop-agents",
-  "description": "A Claude Code mod that shows running workflow agents above the prompt",
   "owner": { "name": "dinglestein" },
+  "metadata": { "description": "A Claude Code mod that shows running workflow agents above the prompt" },
   "plugins": [{ "name": "loop-agents", "source": "./" }]
 }

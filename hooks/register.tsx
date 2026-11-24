@@ -107,6 +107,17 @@ export const register: Register = on => {
     return next(e)
   })
 
+  // A workflow fired in the chat: show the line now instead of at the next tick, and bring it back if it was hidden for an
+  // earlier run (Hide is for the run on screen, not every loop after it).
+  on('tool.call', { tool: 'Workflow' }, async ($, e, next) => {
+    const ran = await next(e)
+    if (ran.deny === undefined && ran.isError !== true) {
+      await update($, isHidden, () => false)
+      await poll($)
+    }
+    return ran
+  })
+
   on('ui.render', { component: 'AbovePrompt' }, async ($, e, next) => {
     const snap = await read($, snapshot)
     if (!snap || snap.running === 0 || (await read($, isHidden))) return next(e)

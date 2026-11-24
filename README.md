@@ -13,7 +13,7 @@ Loop: 3 agents running (Review) · 47 done · verify: sign export in Safari · m
 - The newest three agents' labels, cut to fit.
 - **Hide** tucks the line away for the rest of the session.
 
-It updates every 5 seconds and shows only while a workflow in the current session is active. An agent whose transcript hasn't changed in 10 minutes counts as gone, so a stopped workflow doesn't linger.
+It shows up by itself the moment a workflow starts in the chat (and comes back after Hide when the next one starts), updates every 5 seconds, and shows only while a workflow in the current session is active. An agent whose transcript hasn't changed in 10 minutes counts as gone, so a stopped workflow doesn't linger.
 
 ## How it works
 
