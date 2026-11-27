@@ -1,1 +1,1 @@
-{ "name": "loop-agents", "version": "0.1.1", "description": "Shows how many workflow agents are running, and what they're doing, above the Claude Code prompt", "author": { "name": "dinglestein" }, "license": "MIT", "types": "./types/index.d.ts" }
+{ "name": "loop-agents", "version": "0.2.0", "description": "Shows how many workflow agents are running, what they're doing and how long each workflow has left, above the Claude Code prompt", "author": { "name": "dinglestein" }, "license": "MIT", "types": "./types/index.d.ts" }
